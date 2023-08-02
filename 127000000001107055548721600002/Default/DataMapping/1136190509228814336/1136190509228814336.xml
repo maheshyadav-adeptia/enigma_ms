@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <AU_MAPPINGTRANSFORMATION>
+        <AU_REUSABLE><![CDATA[1]]></AU_REUSABLE>
+        <au_creationDate><![CDATA[2023-08-02T06:55:27]]></au_creationDate>
+        <au_enableAIMap><![CDATA[1]]></au_enableAIMap>
+        <au_metadata><![CDATA[]]></au_metadata>
+        <au_concurrentProcessors><![CDATA[1]]></au_concurrentProcessors>
+        <au_parallelProcessing><![CDATA[0]]></au_parallelProcessing>
+        <au_entityName><![CDATA[pcm]]></au_entityName>
+        <au_xslFile><![CDATA[<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.1" xmlns:saxonJavaMappingTransformation="java:com.adeptia.indigo.services.mapping.MappingTransformation" xmlns:saxonJavaMapperQueryExecutor="java:com.adeptia.indigo.services.mapping.support.dbquery.MapperQueryExecutor" xmlns:saxonJavaAggregateFunctionHandler="java:com.adeptia.indigo.services.mapping.AggregateFunctionHandler"  xmlns:str="http://exslt.org/strings" exclude-result-prefixes="saxonJavaMappingTransformation saxonJavaMapperQueryExecutor saxonJavaAggregateFunctionHandler str" xmlns:saxon="http://saxon.sf.net/" extension-element-prefixes="saxon">
+<xsl:output method="xml" version="1.0" encoding="UTF-8" cdata-section-elements="" indent="yes" /><xsl:param name="_userName"/><xsl:param name="_password"/><xsl:param name="_class"/><xsl:param name="_identifier"/><xsl:param name="_subject"/><xsl:param name="_repositoryPath"/><xsl:param name="_Input1"/> <xsl:variable name="varConn" select="saxonJavaMapperQueryExecutor:getInstance($_identifier,'false')"/> <xsl:variable name="apos">'</xsl:variable> <xsl:variable name="quot">"</xsl:variable><xsl:template match="/"><DB><author><xsl:attribute name="Action"></xsl:attribute><xsl:attribute name="RollBackOnError"></xsl:attribute><xsl:attribute name="recordNumber"><xsl:value-of select="DB/authorSource/@recordNumber"/></xsl:attribute><A_ID><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="DB/authorSource/A_ID"/></A_ID><Name><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="DB/authorSource/Name"/></Name><books><xsl:attribute name="Action"></xsl:attribute><xsl:attribute name="RollBackOnError"></xsl:attribute><xsl:attribute name="recordNumber"><xsl:value-of select="DB/authorSource/booksSource/@recordNumber"/></xsl:attribute><B_ID><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="DB/authorSource/booksSource/B_ID"/></B_ID><Name><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="DB/authorSource/booksSource/Name"/></Name><Price><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="DB/authorSource/booksSource/Price"/></Price><A_ID><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="DB/authorSource/booksSource/A_ID"/></A_ID></books></author></DB></xsl:template></xsl:stylesheet>]]></au_xslFile>
+        <au_xslTransformer><![CDATA[Saxon]]></au_xslTransformer>
+        <au_id><![CDATA[1136190509228814336]]></au_id>
+        <au_dbInfoName><![CDATA[]]></au_dbInfoName>
+        <au_aimapFreeze><![CDATA[0]]></au_aimapFreeze>
+        <au_sourceSchema><![CDATA[AdvanceDbSchema:1136190140348166144]]></au_sourceSchema>
+        <au_modifiedDate><![CDATA[2023-08-02T07:12:52]]></au_modifiedDate>
+        <au_optimizedLoading><![CDATA[1]]></au_optimizedLoading>
+        <au_synchronized><![CDATA[0]]></au_synchronized>
+        <au_customAutoMap><![CDATA[]]></au_customAutoMap>
+        <au_storedProcedure><![CDATA[]]></au_storedProcedure>
+        <au_userOwner><![CDATA[IndigoUser:127000000001107055536473900001]]></au_userOwner>
+        <au_persistDataEnabled><![CDATA[0]]></au_persistDataEnabled>
+        <au_numberOfRecords><![CDATA[500]]></au_numberOfRecords>
+        <au_splitFile><![CDATA[0]]></au_splitFile>
+        <au_mapXmlFile><![CDATA[<?xml version="1.0" encoding="UTF-8"?><maps version="4.4">
+<mappingInformation>
+    <mappingVersion>6.1</mappingVersion>
+    <mappingName>pcm</mappingName>
+    <mappingProject>Default</mappingProject>
+    <mappingDescription>pcm</mappingDescription>
+    <sourceSchemaID>AdvanceDbSchema:1136190140348166144</sourceSchemaID>
+    <targetSchemaID>AdvanceDbSchema:1136178327514574848</targetSchemaID>
+    <mappingOwnerGroup>administrators</mappingOwnerGroup>
+    <mappingOwner>Admin UserNeww</mappingOwner>
+    <mappingLastModifiedBy>Admin UserNeww</mappingLastModifiedBy>
+    <mappingCreationDate>Wed Aug 02 06:55:27 GMT 2023</mappingCreationDate>
+    <mappingModifiedDate>Wed Aug 02 07:12:52 GMT 2023</mappingModifiedDate>
+    <reusable>null</reusable>
+</mappingInformation>
+<sourceRoots>
+    <sourceRoot>
+        <name>DB</name>
+        <schemaName>parentChildSource</schemaName>
+        <schemaID>AdvanceDbSchema:1136190140348166144</schemaID>
+    </sourceRoot>
+</sourceRoots>
+<targetRoots>
+    <targetRoot>
+        <name>DB</name>
+        <schemaName>DatabaseLayout</schemaName>
+        <schemaID>AdvanceDbSchema:1136178327514574848</schemaID>
+        <stream>output_1</stream>
+    </targetRoot>
+</targetRoots>
+<nameSpace/>
+<xslProperty/>
+<GlobalPreCustomXSL/>
+<GlobalPostCustomXSL/>
+<xslTemplates/>
+<map>
+<order>1</order>
+ <targetName>DatabaseLayout</targetName>
+<dest>/DB/author/A_ID</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_parentChildSource/DB/authorSource/A_ID</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="A_ID">
+<Position height="25" identify="&lt;S&gt;" label="$Input_parentChildSource/DB/authorSource/A_ID" mapString="&lt;S&gt;$Input_parentChildSource/DB/authorSource/A_ID" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+<Position height="25" identify="&lt;T&gt;" label="/DB/author/A_ID" mapString="$Input_parentChildSource/DB/authorSource/A_ID" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>DatabaseLayout</targetName>
+<dest>/DB/author/Name</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_parentChildSource/DB/authorSource/Name</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="Name">
+<Position height="25" identify="&lt;T&gt;" label="/DB/author/Name" mapString="$Input_parentChildSource/DB/authorSource/Name" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+<Position height="25" identify="&lt;S&gt;" label="$Input_parentChildSource/DB/authorSource/Name" mapString="&lt;S&gt;$Input_parentChildSource/DB/authorSource/Name" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>DatabaseLayout</targetName>
+<dest>/DB/author/books/B_ID</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_parentChildSource/DB/authorSource/booksSource/B_ID</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="B_ID">
+<Position height="25" identify="&lt;S&gt;" label="$Input_parentChildSource/DB/authorSource/booksSource/B_ID" mapString="&lt;S&gt;$Input_parentChildSource/DB/authorSource/booksSource/B_ID" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+<Position height="25" identify="&lt;T&gt;" label="/DB/author/books/B_ID" mapString="$Input_parentChildSource/DB/authorSource/booksSource/B_ID" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>DatabaseLayout</targetName>
+<dest>/DB/author/books/Name</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_parentChildSource/DB/authorSource/booksSource/Name</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="Name">
+<Position height="25" identify="&lt;T&gt;" label="/DB/author/books/Name" mapString="$Input_parentChildSource/DB/authorSource/booksSource/Name" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+<Position height="25" identify="&lt;S&gt;" label="$Input_parentChildSource/DB/authorSource/booksSource/Name" mapString="&lt;S&gt;$Input_parentChildSource/DB/authorSource/booksSource/Name" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>DatabaseLayout</targetName>
+<dest>/DB/author/books/Price</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_parentChildSource/DB/authorSource/booksSource/Price</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="Price">
+<Position height="25" identify="&lt;T&gt;" label="/DB/author/books/Price" mapString="$Input_parentChildSource/DB/authorSource/booksSource/Price" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+<Position height="25" identify="&lt;S&gt;" label="$Input_parentChildSource/DB/authorSource/booksSource/Price" mapString="&lt;S&gt;$Input_parentChildSource/DB/authorSource/booksSource/Price" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>DatabaseLayout</targetName>
+<dest>/DB/author/books/A_ID</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_parentChildSource/DB/authorSource/booksSource/A_ID</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="A_ID">
+<Position height="25" identify="&lt;S&gt;" label="$Input_parentChildSource/DB/authorSource/booksSource/A_ID" mapString="&lt;S&gt;$Input_parentChildSource/DB/authorSource/booksSource/A_ID" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+<Position height="25" identify="&lt;T&gt;" label="/DB/author/books/A_ID" mapString="$Input_parentChildSource/DB/authorSource/booksSource/A_ID" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>DatabaseLayout</targetName>
+<dest>/DB/author/@recordNumber</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_parentChildSource/DB/authorSource/@recordNumber</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="@recordNumber">
+<Position height="25" identify="&lt;S&gt;" label="$Input_parentChildSource/DB/authorSource/@recordNumber" mapString="&lt;S&gt;$Input_parentChildSource/DB/authorSource/@recordNumber" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+<Position height="25" identify="&lt;T&gt;" label="/DB/author/@recordNumber" mapString="$Input_parentChildSource/DB/authorSource/@recordNumber" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>DatabaseLayout</targetName>
+<dest>/DB/author/books/@recordNumber</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_parentChildSource/DB/authorSource/booksSource/@recordNumber</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="@recordNumber">
+<Position height="25" identify="&lt;T&gt;" label="/DB/author/books/@recordNumber" mapString="$Input_parentChildSource/DB/authorSource/booksSource/@recordNumber" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+<Position height="25" identify="&lt;S&gt;" label="$Input_parentChildSource/DB/authorSource/booksSource/@recordNumber" mapString="&lt;S&gt;$Input_parentChildSource/DB/authorSource/booksSource/@recordNumber" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+</Target>
+ </map>
+<variables>
+</variables>
+
+<globalParameters>
+<keys>
+</keys>
+<contextVariables>
+</contextVariables>
+</globalParameters>
+
+<connections/>
+<functions>
+</functions>
+<disableOutputNodes>
+</disableOutputNodes>
+<filters/>
+    <valuemapNodes/>
+<accessLevel>
+<valueMap>global</valueMap>
+        <globalTemplate>global</globalTemplate>
+        <customAutoMap>global</customAutoMap>
+</accessLevel>
+<DataViewerRecordCount>50</DataViewerRecordCount>
+<isQuickSplittingEnabled>false</isQuickSplittingEnabled>
+<sourceExtensions/>
+<targetExtensions/>
+<disableOutputNodes/>
+<characterSetEncoding>UTF-8</characterSetEncoding>
+<tipOfTheDay>true</tipOfTheDay>
+<contextSchemaLoadedAtSource>false</contextSchemaLoadedAtSource>
+<contextSchemaLoadedAtTarget>false</contextSchemaLoadedAtTarget>
+<contextSchemaDefinition/>
+<filterUnmappedElement>false</filterUnmappedElement>
+<indentOutputXML>true</indentOutputXML>
+    <streamingMode>false</streamingMode>
+    <filterEmptyElements>false</filterEmptyElements>
+    <dbQueryCaching>false</dbQueryCaching>
+<cacheIncludedSchemas>false</cacheIncludedSchemas>
+<TreeExpandLevelCount>3</TreeExpandLevelCount>
+<TreeExpandLevelCountForWebService>5</TreeExpandLevelCountForWebService>
+<TreeExpandLevelForEasySchemaExtensions>10</TreeExpandLevelForEasySchemaExtensions>
+    <SelfRecursionLevel>0</SelfRecursionLevel>
+    <EnableTypesBuffering>true</EnableTypesBuffering>
+    <CdataSectionElements/>
+<excludeResultPrefixes> saxonJavaMappingTransformation saxonJavaMapperQueryExecutor saxonJavaAggregateFunctionHandler str</excludeResultPrefixes>
+<webservice>
+    <consumers/>
+</webservice>
+
+<CustomAutoMapInUse/>
+<processElementFormDefault>true</processElementFormDefault>
+<xslVersion2.0>false</xslVersion2.0>
+<xslVersion3.0>false</xslVersion3.0>
+<sourceXpath/>
+<targetXpath/>
+</maps>
+]]></au_mapXmlFile>
+        <au_valueMap><![CDATA[<ValueMap/>]]></au_valueMap>
+        <au_characterSetEncoding><![CDATA[UTF-8]]></au_characterSetEncoding>
+        <au_permissionMask><![CDATA[770]]></au_permissionMask>
+        <au_description><![CDATA[pcm]]></au_description>
+        <au_pdfFileName><![CDATA[Adp_Map_Rules8173470244409132334.pdf]]></au_pdfFileName>
+        <au_json><![CDATA[{"json":{"category":"mapping","type":"mapping","encoding":"UTF-8","version":"1.0"},"cloneElements":"","filters":"","variables":{"variable":[]},"globalParameters":{"keys":{"key":[]},"contextVariables":{"contextVariable":[]}},"connections":{"connectionVariable":[]},"functions":{"externalFunction":[]},"filterUnmappedElements":false,"indentOutputXML":true,"xslVersion":"1.1","enableStreaming":false,"filterEmptyElements":false,"xslTransformer":"Saxon","characterSetEncoding":"UTF-8","DataViewerRecordCount":50,"dbQueryCaching":false,"isQuickSplittingEnabled":false,"TreeExpandLevelCountForWebService":5,"TreeExpandLevelForEasySchemaExtensions":10,"SelfRecursionLevel":0,"EnableTypesBuffering":true,"TreeExpandLevelCount":3,"onDemandLoadingOfXMLSchemaTree":true,"settingConfigs":{"xslVersion":"1.1","xslTransformer":"Saxon","filterUnmappedElements":false,"indentOutputXML":true,"filterEmptyElements":false,"enableStreaming":false,"characterSetEncoding":"UTF-8","DataViewerRecordCount":50,"dbQueryCaching":false,"isQuickSplittingEnabled":false,"TreeExpandLevelCountForWebService":5,"TreeExpandLevelForEasySchemaExtensions":10,"SelfRecursionLevel":0,"EnableTypesBuffering":true,"TreeExpandLevelCount":3,"onDemandLoadingOfXMLSchemaTree":true,"cDataSectionElements":"","excludeResultPrefixes":"saxonJavaMappingTransformation saxonJavaMapperQueryExecutor saxonJavaAggregateFunctionHandler str","cacheIncludedSchemas":false,"processElementFormDefault":true,"isAutoSaveEnable":true},"disableOuputNodes":{"disableOutputNodeProperty":[]},"isCustomXSLT":false,"contextSchemaLoadedAtSource":false,"contextSchemaLoadedAtTarget":false,"webservice":{"consumers":{"consumer":[]}},"GlobalPreCustomXSL":"","GlobalPostCustomXSL":"","xslTemplates":{"xslTemplateData":[]},"mappingTempId":null,"sourceXpath":"","targetXpath":"","cDataSectionElements":"","splittingData":false,"splitNumberOfRecords":"500","parallelProcessing":false,"maximumConcurrentProcessor":"1","CustomAutoMapInUse":"","excludeResultPrefixes":"saxonJavaMappingTransformation saxonJavaMapperQueryExecutor saxonJavaAggregateFunctionHandler str","cacheIncludedSchemas":false,"metaData":"","processElementFormDefault":true,"mappingInformation":{"mappingVersion":"6.1","mappingName":"pcm","mappingProject":"Default","mappingDescription":"pcm","sourceSchemaID":"AdvanceDbSchema:1136190140348166144","targetSchemaID":"AdvanceDbSchema:1136178327514574848","mappingOwnerGroup":"","mappingOwner":"","mappingLastModifiedBy":"","mappingCreationDate":"","mappingModifiedDate":"","reusable":null},"namespace":"","namespaceList":[],"foreach":"","targetRoots":{"targetRoot":[{"name":"DB","schemaName":"DatabaseLayout","schemaID":"AdvanceDbSchema:1136178327514574848","stream":"output_1"}]},"sourceRoots":{"sourceRoot":[{"name":"DB","schemaName":"parentChildSource","schemaID":"AdvanceDbSchema:1136190140348166144"}]},"contextSchemaDefinition":"","maps":[{"order":1,"targetName":"DatabaseLayout","targetfield":"A_ID","targetfieldpath":"/DB/author/A_ID","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690959294389","elementItem":{"elementType":"SourceElement","name":"A_ID","expression":"$Input_parentChildSource/DB/authorSource/A_ID","paramsCount":0,"syntax":"$Input_parentChildSource/DB/authorSource/A_ID"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690959294390_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690959294390"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690959294390","elementItem":{"elementType":"TargetElement","name":"A_ID","expression":"$Input_parentChildSource/DB/authorSource/A_ID","paramsCount":1,"syntax":"DatabaseLayout/DB/author/A_ID"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690959294389"]}],"expression":"$Input_parentChildSource/DB/authorSource/A_ID","targetrecord":"author","mapping":[{"sourceName":"parentChildSource","operatortype":"field","sourcefield":"A_ID","sourcefielddisplayname":"A_ID","sourcefieldpath":"/DB/authorSource/A_ID","sourcerecord":"authorSource"}],"markComplete":false,"mapId":"Map-2"},{"order":1,"targetName":"DatabaseLayout","targetfield":"Name","targetfieldpath":"/DB/author/Name","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690959296860","elementItem":{"elementType":"SourceElement","name":"Name","expression":"$Input_parentChildSource/DB/authorSource/Name","paramsCount":0,"syntax":"$Input_parentChildSource/DB/authorSource/Name"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690959296861_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690959296861"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690959296861","elementItem":{"elementType":"TargetElement","name":"Name","expression":"$Input_parentChildSource/DB/authorSource/Name","paramsCount":1,"syntax":"DatabaseLayout/DB/author/Name"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690959296860"]}],"expression":"$Input_parentChildSource/DB/authorSource/Name","targetrecord":"author","mapping":[{"sourceName":"parentChildSource","operatortype":"field","sourcefield":"Name","sourcefielddisplayname":"Name","sourcefieldpath":"/DB/authorSource/Name","sourcerecord":"authorSource"}],"markComplete":false,"mapId":"Map-3"},{"order":1,"targetName":"DatabaseLayout","targetfield":"B_ID","targetfieldpath":"/DB/author/books/B_ID","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690959311321","elementItem":{"elementType":"SourceElement","name":"B_ID","expression":"$Input_parentChildSource/DB/authorSource/booksSource/B_ID","paramsCount":0,"syntax":"$Input_parentChildSource/DB/authorSource/booksSource/B_ID"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690959311322_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690959311322"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690959311322","elementItem":{"elementType":"TargetElement","name":"B_ID","expression":"$Input_parentChildSource/DB/authorSource/booksSource/B_ID","paramsCount":1,"syntax":"DatabaseLayout/DB/author/books/B_ID"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690959311321"]}],"expression":"$Input_parentChildSource/DB/authorSource/booksSource/B_ID","targetrecord":"books","mapping":[{"sourceName":"parentChildSource","operatortype":"field","sourcefield":"B_ID","sourcefielddisplayname":"B_ID","sourcefieldpath":"/DB/authorSource/booksSource/B_ID","sourcerecord":"booksSource"}],"markComplete":false,"mapId":"Map-5"},{"order":1,"targetName":"DatabaseLayout","targetfield":"Name","targetfieldpath":"/DB/author/books/Name","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690959314347","elementItem":{"elementType":"SourceElement","name":"Name","expression":"$Input_parentChildSource/DB/authorSource/booksSource/Name","paramsCount":0,"syntax":"$Input_parentChildSource/DB/authorSource/booksSource/Name"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690959314348_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690959314348"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690959314348","elementItem":{"elementType":"TargetElement","name":"Name","expression":"$Input_parentChildSource/DB/authorSource/booksSource/Name","paramsCount":1,"syntax":"DatabaseLayout/DB/author/books/Name"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690959314347"]}],"expression":"$Input_parentChildSource/DB/authorSource/booksSource/Name","targetrecord":"books","mapping":[{"sourceName":"parentChildSource","operatortype":"field","sourcefield":"Name","sourcefielddisplayname":"Name","sourcefieldpath":"/DB/authorSource/booksSource/Name","sourcerecord":"booksSource"}],"markComplete":false,"mapId":"Map-6"},{"order":1,"targetName":"DatabaseLayout","targetfield":"Price","targetfieldpath":"/DB/author/books/Price","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690959316943","elementItem":{"elementType":"SourceElement","name":"Price","expression":"$Input_parentChildSource/DB/authorSource/booksSource/Price","paramsCount":0,"syntax":"$Input_parentChildSource/DB/authorSource/booksSource/Price"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690959316944_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690959316944"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690959316944","elementItem":{"elementType":"TargetElement","name":"Price","expression":"$Input_parentChildSource/DB/authorSource/booksSource/Price","paramsCount":1,"syntax":"DatabaseLayout/DB/author/books/Price"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690959316943"]}],"expression":"$Input_parentChildSource/DB/authorSource/booksSource/Price","targetrecord":"books","mapping":[{"sourceName":"parentChildSource","operatortype":"field","sourcefield":"Price","sourcefielddisplayname":"Price","sourcefieldpath":"/DB/authorSource/booksSource/Price","sourcerecord":"booksSource"}],"markComplete":false,"mapId":"Map-7"},{"order":1,"targetName":"DatabaseLayout","targetfield":"A_ID","targetfieldpath":"/DB/author/books/A_ID","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690959319519","elementItem":{"elementType":"SourceElement","name":"A_ID","expression":"$Input_parentChildSource/DB/authorSource/booksSource/A_ID","paramsCount":0,"syntax":"$Input_parentChildSource/DB/authorSource/booksSource/A_ID"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690959319520_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690959319520"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690959319520","elementItem":{"elementType":"TargetElement","name":"A_ID","expression":"$Input_parentChildSource/DB/authorSource/booksSource/A_ID","paramsCount":1,"syntax":"DatabaseLayout/DB/author/books/A_ID"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690959319519"]}],"expression":"$Input_parentChildSource/DB/authorSource/booksSource/A_ID","targetrecord":"books","mapping":[{"sourceName":"parentChildSource","operatortype":"field","sourcefield":"A_ID","sourcefielddisplayname":"A_ID","sourcefieldpath":"/DB/authorSource/booksSource/A_ID","sourcerecord":"booksSource"}],"markComplete":false,"mapId":"Map-8"},{"order":1,"targetName":"DatabaseLayout","targetfield":"@recordNumber","targetfieldpath":"/DB/author/@recordNumber","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690959329668","elementItem":{"elementType":"SourceElement","name":"@recordNumber","expression":"$Input_parentChildSource/DB/authorSource/@recordNumber","paramsCount":0,"syntax":"$Input_parentChildSource/DB/authorSource/@recordNumber"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690959329669_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690959329669"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690959329669","elementItem":{"elementType":"TargetElement","name":"@recordNumber","expression":"$Input_parentChildSource/DB/authorSource/@recordNumber","paramsCount":1,"syntax":"DatabaseLayout/DB/author/@recordNumber"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690959329668"]}],"expression":"$Input_parentChildSource/DB/authorSource/@recordNumber","targetrecord":"author","mapping":[{"sourceName":"parentChildSource","operatortype":"field","sourcefield":"@recordNumber","sourcefielddisplayname":"@recordNumber","sourcefieldpath":"/DB/authorSource/@recordNumber","sourcerecord":"authorSource"}],"markComplete":false,"mapId":"Map-9"},{"order":1,"targetName":"DatabaseLayout","targetfield":"@recordNumber","targetfieldpath":"/DB/author/books/@recordNumber","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690959334868","elementItem":{"elementType":"SourceElement","name":"@recordNumber","expression":"$Input_parentChildSource/DB/authorSource/booksSource/@recordNumber","paramsCount":0,"syntax":"$Input_parentChildSource/DB/authorSource/booksSource/@recordNumber"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690959334869_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690959334869"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690959334869","elementItem":{"elementType":"TargetElement","name":"@recordNumber","expression":"$Input_parentChildSource/DB/authorSource/booksSource/@recordNumber","paramsCount":1,"syntax":"DatabaseLayout/DB/author/books/@recordNumber"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690959334868"]}],"expression":"$Input_parentChildSource/DB/authorSource/booksSource/@recordNumber","targetrecord":"books","mapping":[{"sourceName":"parentChildSource","operatortype":"field","sourcefield":"@recordNumber","sourcefielddisplayname":"@recordNumber","sourcefieldpath":"/DB/authorSource/booksSource/@recordNumber","sourcerecord":"booksSource"}],"markComplete":false,"mapId":"Map-10"}],"sourceExpandLevel":3,"targetExpandLevel":3}]]></au_json>
+        <au_revision><![CDATA[null]]></au_revision>
+        <au_projectOwner><![CDATA[Default]]></au_projectOwner>
+        <au_modifiedBy><![CDATA[IndigoUser:127000000001107055536473900001]]></au_modifiedBy>
+        <au_targetSchema><![CDATA[AdvanceDbSchema:1136178327514574848]]></au_targetSchema>
+        <au_aimapTrained><![CDATA[1]]></au_aimapTrained>
+        <au_activeVersion><![CDATA[1]]></au_activeVersion>
+        <au_comments><![CDATA[null]]></au_comments>
+        <au_previousVersion><![CDATA[]]></au_previousVersion>
+        <au_version><![CDATA[1]]></au_version>
+        <au_groupOwner><![CDATA[IndigoGroup:127000000001107055548721600002]]></au_groupOwner>
+        <au_xslTemplate><![CDATA[<XslTemplate/>]]></au_xslTemplate>
+    </AU_MAPPINGTRANSFORMATION>
+    <columnInfo dbtype="4">
+        <column name="au_id" type="12"/>
+        <column name="au_version" type="12"/>
+        <column name="au_previousVersion" type="12"/>
+        <column name="au_activeVersion" type="3"/>
+        <column name="au_entityName" type="12"/>
+        <column name="au_userOwner" type="12"/>
+        <column name="au_groupOwner" type="12"/>
+        <column name="au_permissionMask" type="12"/>
+        <column name="au_description" type="12"/>
+        <column name="au_comments" type="12"/>
+        <column name="au_modifiedBy" type="12"/>
+        <column name="au_creationDate" type="93"/>
+        <column name="au_modifiedDate" type="93"/>
+        <column name="au_revision" type="12"/>
+        <column name="au_synchronized" type="3"/>
+        <column name="au_projectOwner" type="12"/>
+        <column name="au_persistDataEnabled" type="3"/>
+        <column name="au_splitFile" type="3"/>
+        <column name="au_numberOfRecords" type="4"/>
+        <column name="au_optimizedLoading" type="3"/>
+        <column name="au_sourceSchema" type="12"/>
+        <column name="au_targetSchema" type="12"/>
+        <column name="au_xslFile" type="-1"/>
+        <column name="au_metadata" type="12"/>
+        <column name="au_mapXmlFile" type="-1"/>
+        <column name="au_json" type="-1"/>
+        <column name="au_pdfFileName" type="12"/>
+        <column name="au_parallelProcessing" type="3"/>
+        <column name="au_concurrentProcessors" type="4"/>
+        <column name="au_dbInfoName" type="12"/>
+        <column name="au_customAutoMap" type="-1"/>
+        <column name="au_valueMap" type="-1"/>
+        <column name="au_xslTemplate" type="-1"/>
+        <column name="au_xslTransformer" type="12"/>
+        <column name="au_characterSetEncoding" type="12"/>
+        <column name="au_enableAIMap" type="3"/>
+        <column name="AU_REUSABLE" type="3"/>
+        <column name="au_storedProcedure" type="-1"/>
+        <column name="au_aimapFreeze" type="3"/>
+        <column name="au_aimapTrained" type="3"/>
+    </columnInfo>
+</data>
