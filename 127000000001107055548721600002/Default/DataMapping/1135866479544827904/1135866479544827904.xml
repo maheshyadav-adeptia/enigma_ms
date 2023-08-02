@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <AU_MAPPINGTRANSFORMATION>
+        <au_description><![CDATA[test]]></au_description>
+        <au_parallelProcessing><![CDATA[0]]></au_parallelProcessing>
+        <au_concurrentProcessors><![CDATA[1]]></au_concurrentProcessors>
+        <au_numberOfRecords><![CDATA[500]]></au_numberOfRecords>
+        <au_characterSetEncoding><![CDATA[UTF-8]]></au_characterSetEncoding>
+        <au_aimapFreeze><![CDATA[0]]></au_aimapFreeze>
+        <au_modifiedDate><![CDATA[2023-08-02T09:36:45]]></au_modifiedDate>
+        <au_projectOwner><![CDATA[Default]]></au_projectOwner>
+        <au_json><![CDATA[{"json":{"category":"mapping","type":"mapping","encoding":"UTF-8","version":"1.0"},"cloneElements":"","filters":"","variables":{"variable":[]},"globalParameters":{"keys":{"key":[]},"contextVariables":{"contextVariable":[]}},"connections":{"connectionVariable":[]},"functions":{"externalFunction":[]},"filterUnmappedElements":false,"indentOutputXML":true,"xslVersion":"1.1","enableStreaming":false,"filterEmptyElements":false,"xslTransformer":"Saxon","characterSetEncoding":"UTF-8","DataViewerRecordCount":50,"dbQueryCaching":false,"isQuickSplittingEnabled":false,"TreeExpandLevelCountForWebService":5,"TreeExpandLevelForEasySchemaExtensions":10,"SelfRecursionLevel":0,"EnableTypesBuffering":true,"TreeExpandLevelCount":3,"onDemandLoadingOfXMLSchemaTree":true,"settingConfigs":{"xslVersion":"1.1","xslTransformer":"Saxon","filterUnmappedElements":false,"indentOutputXML":true,"filterEmptyElements":false,"enableStreaming":false,"characterSetEncoding":"UTF-8","DataViewerRecordCount":50,"dbQueryCaching":false,"isQuickSplittingEnabled":false,"TreeExpandLevelCountForWebService":5,"TreeExpandLevelForEasySchemaExtensions":10,"SelfRecursionLevel":0,"EnableTypesBuffering":true,"TreeExpandLevelCount":3,"onDemandLoadingOfXMLSchemaTree":true,"cDataSectionElements":"","excludeResultPrefixes":"saxonJavaMappingTransformation saxonJavaMapperQueryExecutor saxonJavaAggregateFunctionHandler str","cacheIncludedSchemas":false,"processElementFormDefault":true,"isAutoSaveEnable":true},"disableOuputNodes":{"disableOutputNodeProperty":[]},"isCustomXSLT":false,"contextSchemaLoadedAtSource":false,"contextSchemaLoadedAtTarget":false,"webservice":{"consumers":{"consumer":[]}},"GlobalPreCustomXSL":"","GlobalPostCustomXSL":"","xslTemplates":{"xslTemplateData":[]},"mappingTempId":null,"sourceXpath":"","targetXpath":"","cDataSectionElements":"","splittingData":false,"splitNumberOfRecords":"500","parallelProcessing":false,"maximumConcurrentProcessor":"1","CustomAutoMapInUse":"","excludeResultPrefixes":"saxonJavaMappingTransformation saxonJavaMapperQueryExecutor saxonJavaAggregateFunctionHandler str","cacheIncludedSchemas":false,"metaData":"","processElementFormDefault":true,"mappingInformation":{"mappingVersion":"6.1","mappingName":"testDBMapping","mappingProject":"Default","mappingDescription":"test","sourceSchemaID":"TextSchema:1135865984256245760","targetSchemaID":"AdvanceDbSchema:1135868259087351808","mappingOwnerGroup":"","mappingOwner":"","mappingLastModifiedBy":"","mappingCreationDate":"","mappingModifiedDate":"","reusable":true},"namespace":"","namespaceList":[],"foreach":"","targetRoots":{"targetRoot":[{"name":"DB","schemaName":"TstLayout","schemaID":"AdvanceDbSchema:1135868259087351808","stream":"output_1"}]},"sourceRoots":{"sourceRoot":[{"name":"Root","schemaName":"DBLayout","schemaID":"TextSchema:1135865984256245760"}]},"contextSchemaDefinition":"","maps":[{"order":1,"targetName":"TstLayout","targetfield":"Persons","targetfieldpath":"/DB/Persons","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690882777445","elementItem":{"elementType":"SourceElement","name":"Record","expression":"$Input_DBLayout/Root/Record","paramsCount":0,"syntax":"$Input_DBLayout/Root/Record"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690882777446_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690882777446"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690882777446","elementItem":{"elementType":"TargetElement","name":"Persons","expression":"$Input_DBLayout/Root/Record","paramsCount":1,"syntax":"TstLayout/DB/Persons"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690882777445"]}],"expression":"$Input_DBLayout/Root/Record","targetrecord":"DB","mapping":[{"sourceName":"DBLayout","operatortype":"field","sourcefield":"Record","sourcefielddisplayname":"Record","sourcefieldpath":"/Root/Record","sourcerecord":"Root","id":"Mapping-1"}],"markComplete":false,"mapId":"TstLayout/DB/Persons"},{"order":1,"targetName":"TstLayout","targetfield":"PersonID","targetfieldpath":"/DB/Persons/PersonID","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690882779380","elementItem":{"elementType":"SourceElement","name":"id","expression":"$Input_DBLayout/Root/Record/id","paramsCount":0,"syntax":"$Input_DBLayout/Root/Record/id"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690882779381_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690882779381"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690882779381","elementItem":{"elementType":"TargetElement","name":"PersonID","expression":"$Input_DBLayout/Root/Record/id","paramsCount":1,"syntax":"TstLayout/DB/Persons/PersonID"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690882779380"]}],"expression":"$Input_DBLayout/Root/Record/id","targetrecord":"Persons","mapping":[{"sourceName":"DBLayout","operatortype":"field","sourcefield":"id","sourcefielddisplayname":"id","sourcefieldpath":"/Root/Record/id","sourcerecord":"Record","id":"Mapping-2"}],"markComplete":false,"mapId":"TstLayout/DB/Persons/PersonID"},{"order":1,"targetName":"TstLayout","targetfield":"LastName","targetfieldpath":"/DB/Persons/LastName","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690882781081","elementItem":{"elementType":"SourceElement","name":"first","expression":"$Input_DBLayout/Root/Record/first","paramsCount":0,"syntax":"$Input_DBLayout/Root/Record/first"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690882781082_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690882781082"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690882781082","elementItem":{"elementType":"TargetElement","name":"LastName","expression":"$Input_DBLayout/Root/Record/first","paramsCount":1,"syntax":"TstLayout/DB/Persons/LastName"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690882781081"]}],"expression":"$Input_DBLayout/Root/Record/first","targetrecord":"Persons","mapping":[{"sourceName":"DBLayout","operatortype":"field","sourcefield":"first","sourcefielddisplayname":"first","sourcefieldpath":"/Root/Record/first","sourcerecord":"Record","id":"Mapping-3"}],"markComplete":false,"mapId":"TstLayout/DB/Persons/LastName"},{"order":1,"targetName":"TstLayout","targetfield":"FirstName","targetfieldpath":"/DB/Persons/FirstName","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690882783620","elementItem":{"elementType":"SourceElement","name":"last","expression":"$Input_DBLayout/Root/Record/last","paramsCount":0,"syntax":"$Input_DBLayout/Root/Record/last"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690882783621_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690882783621"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690882783621","elementItem":{"elementType":"TargetElement","name":"FirstName","expression":"$Input_DBLayout/Root/Record/last","paramsCount":1,"syntax":"TstLayout/DB/Persons/FirstName"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690882783620"]}],"expression":"$Input_DBLayout/Root/Record/last","targetrecord":"Persons","mapping":[{"sourceName":"DBLayout","operatortype":"field","sourcefield":"last","sourcefielddisplayname":"last","sourcefieldpath":"/Root/Record/last","sourcerecord":"Record","id":"Mapping-4"}],"markComplete":false,"mapId":"TstLayout/DB/Persons/FirstName"},{"order":1,"targetName":"TstLayout","targetfield":"Address","targetfieldpath":"/DB/Persons/Address","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690882785356","elementItem":{"elementType":"SourceElement","name":"address","expression":"$Input_DBLayout/Root/Record/address","paramsCount":0,"syntax":"$Input_DBLayout/Root/Record/address"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690882785357_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690882785357"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690882785357","elementItem":{"elementType":"TargetElement","name":"Address","expression":"$Input_DBLayout/Root/Record/address","paramsCount":1,"syntax":"TstLayout/DB/Persons/Address"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690882785356"]}],"expression":"$Input_DBLayout/Root/Record/address","targetrecord":"Persons","mapping":[{"sourceName":"DBLayout","operatortype":"field","sourcefield":"address","sourcefielddisplayname":"address","sourcefieldpath":"/Root/Record/address","sourcerecord":"Record","id":"Mapping-5"}],"markComplete":false,"mapId":"TstLayout/DB/Persons/Address"},{"order":1,"targetName":"TstLayout","targetfield":"City","targetfieldpath":"/DB/Persons/City","defaultEditor":"graphical","graphicalMappingJson":[{"elementId":"GraphicalElement-ext-1690882787153","elementItem":{"elementType":"SourceElement","name":"city","expression":"$Input_DBLayout/Root/Record/city","paramsCount":0,"syntax":"$Input_DBLayout/Root/Record/city"},"elementPos":[1600,1520],"nextElementIds":["GraphicalElement-ext-1690882787154_IncomingElement-1"],"nextGraphicalElementIds":["GraphicalElement-ext-1690882787154"],"previousElementIds":[]},{"elementId":"GraphicalElement-ext-1690882787154","elementItem":{"elementType":"TargetElement","name":"City","expression":"$Input_DBLayout/Root/Record/city","paramsCount":1,"syntax":"TstLayout/DB/Persons/City"},"elementPos":[1800,1520],"nextElementIds":[],"nextGraphicalElementIds":[],"previousElementIds":["GraphicalElement-ext-1690882787153"]}],"expression":"$Input_DBLayout/Root/Record/city","targetrecord":"Persons","mapping":[{"sourceName":"DBLayout","operatortype":"field","sourcefield":"city","sourcefielddisplayname":"city","sourcefieldpath":"/Root/Record/city","sourcerecord":"Record","id":"Mapping-6"}],"markComplete":false,"mapId":"TstLayout/DB/Persons/City"}],"sourceExpandLevel":3,"targetExpandLevel":3}]]></au_json>
+        <au_revision><![CDATA[null]]></au_revision>
+        <au_optimizedLoading><![CDATA[1]]></au_optimizedLoading>
+        <au_xslTransformer><![CDATA[Saxon]]></au_xslTransformer>
+        <au_mapXmlFile><![CDATA[<?xml version="1.0" encoding="UTF-8"?><maps version="4.4">
+<mappingInformation>
+    <mappingVersion>6.1</mappingVersion>
+    <mappingName>testDBMapping</mappingName>
+    <mappingProject>Default</mappingProject>
+    <mappingDescription>test</mappingDescription>
+    <sourceSchemaID>TextSchema:1135865984256245760</sourceSchemaID>
+    <targetSchemaID>AdvanceDbSchema:1135868259087351808</targetSchemaID>
+    <mappingOwnerGroup>administrators</mappingOwnerGroup>
+    <mappingOwner>Admin UserNeww</mappingOwner>
+    <mappingLastModifiedBy>Admin UserNeww</mappingLastModifiedBy>
+    <mappingCreationDate>Tue Aug 01 09:27:52 GMT 2023</mappingCreationDate>
+    <mappingModifiedDate>Wed Aug 02 09:36:43 GMT 2023</mappingModifiedDate>
+    <reusable>true</reusable>
+</mappingInformation>
+<sourceRoots>
+    <sourceRoot>
+        <name>Root</name>
+        <schemaName>DBLayout</schemaName>
+        <schemaID>TextSchema:1135865984256245760</schemaID>
+    </sourceRoot>
+</sourceRoots>
+<targetRoots>
+    <targetRoot>
+        <name>DB</name>
+        <schemaName>TstLayout</schemaName>
+        <schemaID>AdvanceDbSchema:1135868259087351808</schemaID>
+        <stream>output_1</stream>
+    </targetRoot>
+</targetRoots>
+<nameSpace/>
+<xslProperty/>
+<GlobalPreCustomXSL/>
+<GlobalPostCustomXSL/>
+<xslTemplates/>
+<map>
+<order>1</order>
+ <targetName>TstLayout</targetName>
+<dest>/DB/Persons</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_DBLayout/Root/Record</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="Persons">
+<Position height="25" identify="&lt;S&gt;" label="$Input_DBLayout/Root/Record" mapString="&lt;S&gt;$Input_DBLayout/Root/Record" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+<Position height="25" identify="&lt;T&gt;" label="/DB/Persons" mapString="$Input_DBLayout/Root/Record" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>TstLayout</targetName>
+<dest>/DB/Persons/PersonID</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_DBLayout/Root/Record/id</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="PersonID">
+<Position height="25" identify="&lt;T&gt;" label="/DB/Persons/PersonID" mapString="$Input_DBLayout/Root/Record/id" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+<Position height="25" identify="&lt;S&gt;" label="$Input_DBLayout/Root/Record/id" mapString="&lt;S&gt;$Input_DBLayout/Root/Record/id" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>TstLayout</targetName>
+<dest>/DB/Persons/LastName</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_DBLayout/Root/Record/first</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="LastName">
+<Position height="25" identify="&lt;T&gt;" label="/DB/Persons/LastName" mapString="$Input_DBLayout/Root/Record/first" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+<Position height="25" identify="&lt;S&gt;" label="$Input_DBLayout/Root/Record/first" mapString="&lt;S&gt;$Input_DBLayout/Root/Record/first" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>TstLayout</targetName>
+<dest>/DB/Persons/FirstName</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_DBLayout/Root/Record/last</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="FirstName">
+<Position height="25" identify="&lt;T&gt;" label="/DB/Persons/FirstName" mapString="$Input_DBLayout/Root/Record/last" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+<Position height="25" identify="&lt;S&gt;" label="$Input_DBLayout/Root/Record/last" mapString="&lt;S&gt;$Input_DBLayout/Root/Record/last" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>TstLayout</targetName>
+<dest>/DB/Persons/Address</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_DBLayout/Root/Record/address</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="Address">
+<Position height="25" identify="&lt;S&gt;" label="$Input_DBLayout/Root/Record/address" mapString="&lt;S&gt;$Input_DBLayout/Root/Record/address" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+<Position height="25" identify="&lt;T&gt;" label="/DB/Persons/Address" mapString="$Input_DBLayout/Root/Record/address" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+</Target>
+ </map>
+<map>
+<order>1</order>
+ <targetName>TstLayout</targetName>
+<dest>/DB/Persons/City</dest>
+<preCustomXSL/>
+<postCustomXSL/>
+ <mapValue>$Input_DBLayout/Root/Record/city</mapValue>
+ <forEach/>
+ <comments/>
+<namespacePrefix/>
+
+ <namespaceRemovePrefix>false</namespaceRemovePrefix>
+<localVariables/>
+ <Sorting/>
+ <Target name="City">
+<Position height="25" identify="&lt;S&gt;" label="$Input_DBLayout/Root/Record/city" mapString="&lt;S&gt;$Input_DBLayout/Root/Record/city" x="100" y="20">
+<SourceLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</SourceLines>
+<TargetLines/>
+</Position>
+<Position height="25" identify="&lt;T&gt;" label="/DB/Persons/City" mapString="$Input_DBLayout/Root/Record/city" x="300" y="20">
+<SourceLines/>
+<TargetLines>
+<Line x1="180" y1="32" x2="280" y2="32"/>
+</TargetLines>
+</Position>
+</Target>
+ </map>
+<variables>
+</variables>
+
+<globalParameters>
+<keys>
+</keys>
+<contextVariables>
+</contextVariables>
+</globalParameters>
+
+<connections/>
+<functions>
+</functions>
+<disableOutputNodes>
+</disableOutputNodes>
+<filters/>
+    <valuemapNodes/>
+<accessLevel>
+<valueMap>global</valueMap>
+        <globalTemplate>global</globalTemplate>
+        <customAutoMap>global</customAutoMap>
+</accessLevel>
+<DataViewerRecordCount>50</DataViewerRecordCount>
+<isQuickSplittingEnabled>false</isQuickSplittingEnabled>
+<sourceExtensions/>
+<targetExtensions/>
+<disableOutputNodes/>
+<characterSetEncoding>UTF-8</characterSetEncoding>
+<tipOfTheDay>true</tipOfTheDay>
+<contextSchemaLoadedAtSource>false</contextSchemaLoadedAtSource>
+<contextSchemaLoadedAtTarget>false</contextSchemaLoadedAtTarget>
+<contextSchemaDefinition/>
+<filterUnmappedElement>false</filterUnmappedElement>
+<indentOutputXML>true</indentOutputXML>
+    <streamingMode>false</streamingMode>
+    <filterEmptyElements>false</filterEmptyElements>
+    <dbQueryCaching>false</dbQueryCaching>
+<cacheIncludedSchemas>false</cacheIncludedSchemas>
+<TreeExpandLevelCount>3</TreeExpandLevelCount>
+<TreeExpandLevelCountForWebService>5</TreeExpandLevelCountForWebService>
+<TreeExpandLevelForEasySchemaExtensions>10</TreeExpandLevelForEasySchemaExtensions>
+    <SelfRecursionLevel>0</SelfRecursionLevel>
+    <EnableTypesBuffering>true</EnableTypesBuffering>
+    <CdataSectionElements/>
+<excludeResultPrefixes> saxonJavaMappingTransformation saxonJavaMapperQueryExecutor saxonJavaAggregateFunctionHandler str</excludeResultPrefixes>
+<webservice>
+    <consumers/>
+</webservice>
+
+<CustomAutoMapInUse/>
+<processElementFormDefault>true</processElementFormDefault>
+<xslVersion2.0>false</xslVersion2.0>
+<xslVersion3.0>false</xslVersion3.0>
+<sourceXpath/>
+<targetXpath/>
+</maps>
+]]></au_mapXmlFile>
+        <au_entityName><![CDATA[testDBMapping]]></au_entityName>
+        <au_xslTemplate><![CDATA[<XslTemplate/>]]></au_xslTemplate>
+        <au_splitFile><![CDATA[0]]></au_splitFile>
+        <au_targetSchema><![CDATA[AdvanceDbSchema:1135868259087351808]]></au_targetSchema>
+        <AU_REUSABLE><![CDATA[1]]></AU_REUSABLE>
+        <au_userOwner><![CDATA[IndigoUser:127000000001107055536473900001]]></au_userOwner>
+        <au_aimapTrained><![CDATA[0]]></au_aimapTrained>
+        <au_storedProcedure><![CDATA[]]></au_storedProcedure>
+        <au_synchronized><![CDATA[0]]></au_synchronized>
+        <au_dbInfoName><![CDATA[]]></au_dbInfoName>
+        <au_valueMap><![CDATA[<ValueMap/>]]></au_valueMap>
+        <au_activeVersion><![CDATA[1]]></au_activeVersion>
+        <au_xslFile><![CDATA[<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.1" xmlns:saxonJavaMappingTransformation="java:com.adeptia.indigo.services.mapping.MappingTransformation" xmlns:saxonJavaMapperQueryExecutor="java:com.adeptia.indigo.services.mapping.support.dbquery.MapperQueryExecutor" xmlns:saxonJavaAggregateFunctionHandler="java:com.adeptia.indigo.services.mapping.AggregateFunctionHandler"  xmlns:str="http://exslt.org/strings" exclude-result-prefixes="saxonJavaMappingTransformation saxonJavaMapperQueryExecutor saxonJavaAggregateFunctionHandler str" xmlns:saxon="http://saxon.sf.net/" extension-element-prefixes="saxon">
+<xsl:output method="xml" version="1.0" encoding="UTF-8" cdata-section-elements="" indent="yes" /><xsl:param name="_userName"/><xsl:param name="_password"/><xsl:param name="_class"/><xsl:param name="_identifier"/><xsl:param name="_subject"/><xsl:param name="_repositoryPath"/><xsl:param name="_Input1"/> <xsl:variable name="varConn" select="saxonJavaMapperQueryExecutor:getInstance($_identifier,'false')"/> <xsl:variable name="apos">'</xsl:variable> <xsl:variable name="quot">"</xsl:variable><xsl:template match="/"><DB><xsl:apply-templates select="Root/Record" mode="_DB_Persons_order1">
+</xsl:apply-templates></DB></xsl:template><xsl:template match="/Root/Record" mode="_DB_Persons_order1">
+<Persons><xsl:attribute name="Action"></xsl:attribute><xsl:attribute name="RollBackOnError"></xsl:attribute><xsl:attribute name="recordNumber"></xsl:attribute><PersonID><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="id"/></PersonID><LastName><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="first"/></LastName><FirstName><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="last"/></FirstName><Address><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="address"/></Address><City><xsl:attribute name="isNull"></xsl:attribute><xsl:value-of select="city"/></City></Persons></xsl:template></xsl:stylesheet>]]></au_xslFile>
+        <au_previousVersion><![CDATA[]]></au_previousVersion>
+        <au_enableAIMap><![CDATA[0]]></au_enableAIMap>
+        <au_permissionMask><![CDATA[770]]></au_permissionMask>
+        <au_modifiedBy><![CDATA[IndigoUser:127000000001107055536473900001]]></au_modifiedBy>
+        <au_sourceSchema><![CDATA[TextSchema:1135865984256245760]]></au_sourceSchema>
+        <au_customAutoMap><![CDATA[]]></au_customAutoMap>
+        <au_persistDataEnabled><![CDATA[0]]></au_persistDataEnabled>
+        <au_version><![CDATA[1]]></au_version>
+        <au_id><![CDATA[1135866479544827904]]></au_id>
+        <au_metadata><![CDATA[]]></au_metadata>
+        <au_groupOwner><![CDATA[IndigoGroup:127000000001107055548721600002]]></au_groupOwner>
+        <au_comments><![CDATA[null]]></au_comments>
+        <au_creationDate><![CDATA[2023-08-01T09:27:52]]></au_creationDate>
+        <au_pdfFileName><![CDATA[Adp_Map_Rules9677744994695994720.pdf]]></au_pdfFileName>
+    </AU_MAPPINGTRANSFORMATION>
+    <columnInfo dbtype="4">
+        <column name="au_id" type="12"/>
+        <column name="au_version" type="12"/>
+        <column name="au_previousVersion" type="12"/>
+        <column name="au_activeVersion" type="3"/>
+        <column name="au_entityName" type="12"/>
+        <column name="au_userOwner" type="12"/>
+        <column name="au_groupOwner" type="12"/>
+        <column name="au_permissionMask" type="12"/>
+        <column name="au_description" type="12"/>
+        <column name="au_comments" type="12"/>
+        <column name="au_modifiedBy" type="12"/>
+        <column name="au_creationDate" type="93"/>
+        <column name="au_modifiedDate" type="93"/>
+        <column name="au_revision" type="12"/>
+        <column name="au_synchronized" type="3"/>
+        <column name="au_projectOwner" type="12"/>
+        <column name="au_persistDataEnabled" type="3"/>
+        <column name="au_splitFile" type="3"/>
+        <column name="au_numberOfRecords" type="4"/>
+        <column name="au_optimizedLoading" type="3"/>
+        <column name="au_sourceSchema" type="12"/>
+        <column name="au_targetSchema" type="12"/>
+        <column name="au_xslFile" type="-1"/>
+        <column name="au_metadata" type="12"/>
+        <column name="au_mapXmlFile" type="-1"/>
+        <column name="au_json" type="-1"/>
+        <column name="au_pdfFileName" type="12"/>
+        <column name="au_parallelProcessing" type="3"/>
+        <column name="au_concurrentProcessors" type="4"/>
+        <column name="au_dbInfoName" type="12"/>
+        <column name="au_customAutoMap" type="-1"/>
+        <column name="au_valueMap" type="-1"/>
+        <column name="au_xslTemplate" type="-1"/>
+        <column name="au_xslTransformer" type="12"/>
+        <column name="au_characterSetEncoding" type="12"/>
+        <column name="au_enableAIMap" type="3"/>
+        <column name="AU_REUSABLE" type="3"/>
+        <column name="au_storedProcedure" type="-1"/>
+        <column name="au_aimapFreeze" type="3"/>
+        <column name="au_aimapTrained" type="3"/>
+    </columnInfo>
+</data>
